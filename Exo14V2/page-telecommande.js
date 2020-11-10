@@ -24,7 +24,7 @@ document.querySelector("main > ul > li:nth-of-type(4)").addEventListener("click"
 });
 //Klaxon
 document.querySelector("main > ul > li:nth-of-type(5)").addEventListener("click", (event) => {
-  let bruit = new Audio("https://raw.githubusercontent.com/zexman34/formationSimplonPublic/main/Exo14V2/Sons/Pussy.mp3");
+  let bruit = new Audio("https://raw.githubusercontent.com/zexman34/formationSimplonPublic/main/Exo14V2/Sons/Baby.mp3");
   bruit.play();
 });
 //Travaux
