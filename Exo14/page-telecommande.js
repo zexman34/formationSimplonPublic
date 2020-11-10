@@ -19,6 +19,6 @@ document.querySelector("main > ul > li:nth-of-type(3)").addEventListener("click"
 });
 
 document.querySelector("main > ul > li:nth-of-type(4)").addEventListener("click", (event) => {
-  let bruit = new Audio("https://github.com/zexman34/formationSimplonPublic/blob/main/Exo14/punch-gaming-sound-effect-hd.mp3");
+  let bruit = new Audio("https://raw.githubusercontent.com/zexman34/formationSimplonPublic/main/Exo14/Punch_Swoosh_Series.mp3");
   bruit.play();
 });
