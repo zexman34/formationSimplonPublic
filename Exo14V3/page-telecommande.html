@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <meta name="description" content="Cette télécommande d'une qualité exeptionnelle est le cadeau de rêve pour apprendre ce qu'est la vrai musique à vos enfants ! Cliquez pour en savoir plus" /><!-- spécial kid -->
+  <title>Télécommande à bruits</title>
+  <link rel="stylesheet" href="page-telecommande.css">
+</head>
+<body>
+
+  <header>
+    <h1>Ma télécommande à bruits</h1>
+    <label for="choixtheme">Quelle version de la télécommande vous voulez voir ?</label>
+    <select class="form-control" id="triggertheme" onchange="toggleTheme()">
+      <option value="Version Enfant">Voir la version enfant</option>
+      <option value="Version Adulte">Voir la version adulte</option>
+    </select>
+
+
+    <script>
+      
+      
+
+      function toggleTheme() {
+        var theme = document.getElementById("triggertheme").value;
+      
+        var myThemeKid = document.getElementById('enfantID');
+        var myThemeAdult = document.getElementById('adulteID');
+      
+        if (theme == 'Version Enfant') {
+          myThemeKid.style.display = 'block';
+          myThemeAdult.style.display = 'none';
+        }
+      
+        if (theme == 'Version Adulte') {
+          myThemeKid.style.display = 'none';
+          myThemeAdult.style.display = 'block';
+        }
+      };
+    
+  </script>
+
+
+  </header>
+  
+<div id="enfantID">
+  <main>
+      <ul>
+        <!-- <p>ENFANTS</p> -->
+        <li><img src="https://easydrawingguides.com/wp-content/uploads/2017/01/How-to-Draw-a-cartoon-car-20.png " width="100px"></li>
+        <li><img src="https://pngriver.com/wp-content/uploads/2017/11/golden-bell-icon-png-transparent.png " width="100px"></li>
+        <li><img src="http://cdn.onlinewebfonts.com/svg/img_74614.png " width="100px"></li>
+        <li><img src="https://cdn.onlinewebfonts.com/svg/img_490859.png" width="100px"></li>
+        <li><img src="http://cdn.onlinewebfonts.com/svg/download_528386.png " width="100px"></li>
+        <li><img src="https://vignette.wikia.nocookie.net/routes/images/2/25/Travaux.svg/revision/latest?cb=20090208202450 " width="100px"></li>
+      </ul>
+  </main>
+</div>
+
+<div id="adulteID">
+  <main>
+    <ul>
+      <!-- <p>ADULTE</p> -->
+      <li><img src="https://images.vexels.com/media/users/3/145808/isolated/preview/c9560e2e4688bc33eb9d7695ab9b292a-logotipo-de-rock-and-roll-logo-de-rock-by-vexels.png " width="100px"></li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/1200px-Little_Rock_Trojans_logo.svg.png " width="100px"></li>
+      <li><img src="https://cdn.freebiesupply.com/logos/large/2x/hard-rock-club-logo-png-transparent.png " width="100px"></li>
+      <li><img src="https://images.vexels.com/media/users/3/145815/isolated/preview/23783c59ee4ce895660c736e0d325a50-rock-music-party-logo-by-vexels.png" width="100px"></li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rammstein_logo_2.svg/1024px-Rammstein_logo_2.svg.png " width="100px"></li>
+      <li><img src="https://images.emojiterra.com/mozilla/512px/2753.png" width="100px"></li>
+    </ul>
+  </main>
+</div>
+
+
+
+
+  <footer>
+
+
+    <p>Sauf mention contraire, le contenu de cette page est distribué sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="noreferrer">licence CC BY-SA 4.0</a></p>
+  </footer>
+
+  <!-- je place mon js à la fin pour ne pas pénaliser le chargement de ma page -->
+  <script src="page-telecommande.js"></script>
+
+</body>
+</html>
