@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+    
+    
+}
+
+.container{
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+ 
+
+
+.formu{
+    display: grid;
+    place-items: center;
+}
+input{
+    margin: 2%;
+    border-radius: 5px;
+    
+}
+form{
+    width: 100px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+a{
+    width: 100px;
+    height: 40px;
+}
+
+p{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.result{
+    max-height: 90vh;
+    width:90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button{
+    background-color: rgb(255,217,88);
+    border-radius: 15px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;    
+}
+
+button:hover{
+    background-color: rgb(255,235,170);
+    transition: all 0.3s ease-in;     
+}
+
+#wrapD3Cube {
+    margin: 0.5rem;
+    width: 50px;
+    height: 50px;
+    transform: translateX(3050px) translateY(3500px);
+
+}
+.D3Cube {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    perspective: 800px;
+}
+.D3Cube > div {
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 10px #373737;
+    overflow: hidden;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#side1 {
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(25px);
+    
+}
+#side2 {
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(25px);
+  
+}
+#side3 {
+    transform: translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: translateX(0px) translateY(0px) translateZ(25px);
+}
+#side4 {
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(25px);
+}
+#side5 {
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(25px);
+    
+}
+#side6 {
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(26px);
+    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(25px); 
+    
+}
+
+
+.D3Cube {
+    -webkit-animation: cubeRotation 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: cubeRotation 1.5s  ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;    
+}
+
+#wrapD3Cube {
+    -webkit-animation: cubeTranslation 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: cubeTranslation 1.5s  ;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;    
+}
+
+
+
+@keyframes cubeRotation {
+    0%   {  transform: rotateX(0deg) rotateY() rotateZ(0deg)  ; } 
+    100%   {    transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);  }
+}
+
+@keyframes cubeTranslation {
+    0%   {  transform: translateX() translateY()  ; }  
+    100%   {    transform: translateX(00px) translateY(00px) ;  }
+}
+
+
+
+@media (max-width: 767px) {
+    h1{
+        margin: 5vh;
+        font-size: 0.4cm;
+    }
+}
+
+
+@media (min-width: 768px) {
+    h1{
+        margin: 5vh;
+        font-size: 1cm;
+    }
+}
