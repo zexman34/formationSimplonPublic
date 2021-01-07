@@ -1,0 +1,5 @@
+INSERT INTO `url` (`id`, `url`, `shortcut`, `datetime`, `description`) VALUES (NULL, 'https://stph.scenari-community.org/bdd/0/co/eaUL018.html', 'cardi', '2021-01-07', 'site de cardinalité');
+
+INSERT INTO `key-word` (`id`, `mot-cle`) VALUES (NULL, 'db, cardi, cardinal, blah');
+
+INSERT INTO `asso_kw_url` (`id`, `id_kw`, `id_url`) VALUES (NULL, '1', '1');
