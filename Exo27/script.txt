@@ -1,0 +1,11 @@
+Aliments :
+INSERT INTO `aliments` (`id`, `nom`, `prix`, `date`, `id_stock`) VALUES (NULL, 'courgette', '1.50', '2021-01-08', '1');
+
+Saison : 
+INSERT INTO `saison` (`id`, `nom`) VALUES (NULL, 'mars');
+
+Type : 
+INSERT INTO `type` (`id`, `nom`) VALUES (NULL, 'viande');
+
+Asso_alim :
+INSERT INTO `asso_alim` (`id`, `id_ali`, `id_saison`, `id_type`) VALUES (NULL, '2', '3', '3');
