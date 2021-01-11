@@ -2,7 +2,7 @@
 
   const DB_HOST    = "";
   const DB_NAME    = "";
-  const DB_LOGIN   = "";
+  const DB_LOGIN   = "root";
   const DB_PASS    = "";
 
   const DB_DRIVER  = "mysql";
