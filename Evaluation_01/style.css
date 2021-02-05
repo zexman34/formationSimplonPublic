@@ -1,0 +1,143 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-size: 62.5%;
+}
+
+/*THEME COULEUR*/
+/* background-color: #393e46;
+   background-color: #393e46;
+   background-color: #ffd369;
+   background-color: #eeeeee; */
+
+/*CHARGEMENT DE LA POLICE CUSTOM*/
+@font-face {
+	font-family: "steh_auf";
+	font-style: normal;
+	src: url('STAY_HOME.otf');
+}
+
+/*DESKTOP*/
+@media (min-width: 768px) {
+    h1{        
+        font-size: 1.5cm;
+    }
+    .logo{
+        width: 20rem;
+    }
+    .champ{
+        width: 45rem;
+        height: 3rem;
+    }
+    .main{
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #393e46;
+    }
+    .second{
+        min-height: 30vh;
+        min-width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-items: start;
+        margin-left: 45px;
+    }
+    .separator{
+        max-height: 10vh;
+        font-size: 5rem;
+        display: grid;
+        text-align: center;
+        background-color: #393e46;
+        color: #ffd369;
+    }
+}
+
+
+
+/*MOBILE*/
+@media (max-width: 767px) {
+    h1{        
+        font-size: 0.8cm;
+    }
+    .logo{
+        width: 15rem;
+    }
+    .champ{
+        width: 20rem;
+        height: 3rem;
+    }
+    .main{
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #393e46;
+    }
+    .second{
+        min-height: 30vh;
+        min-width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 45px;
+    }
+    .separator{
+        max-height: 10vh;
+        font-size: 2.5rem;
+        display: grid;
+        text-align: center;
+        background-color: #393e46;
+        color: #ffd369;
+    }
+}
+
+
+/*BASE*/
+body{
+    max-width: 100vw;
+    background-color: #393e46;
+ /* background-color: #393e46;
+    background-color: #ffd369;
+    background-color: #eeeeee; */
+}
+
+
+.title{
+    font-family: "steh_auf";
+    color: #eeeeee;
+    min-height: 20vh;
+    width: 100vw;
+    font-size: 4rem;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    background-color: #222831;
+}
+.recherche{
+    margin: 50px;
+    font-family: "steh_auf";    
+    background-color: #ffd369;
+    border-radius: 5px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow:  5px 5px 5px rgb(32, 32, 32);
+}
+.phrase{
+    color:#eeeeee;
+    font-size: 1.5rem;
+}
+.resultat{
+    color:#eeeeee;
+    font-size: 1.5rem;
+}
+
+
