@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #417BAB;
+}
+
+body .style {
+  border: solid 0.3em;
+  border-color: #D2A10B;
+  background-color: #FFD656;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .style .styleList {
+  margin: 2rem;
+  overflow: auto;
+  height: 20rem;
+  width: 40rem;
+}
+
+body .genre {
+  border: solid 0.3em;
+  border-color: #D2A10B;
+  background-color: #FFD656;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+body .artiste {
+  border: solid 0.3em;
+  border-color: #D2A10B;
+  background-color: #FFD656;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .artiste .artisteListe {
+  min-width: 40vw;
+  margin: 2rem;
+  border: solid 0.3em;
+  border-color: #A57D00;
+  border-radius: 2rem;
+  min-width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .artiste .formArtistStyle {
+  margin: 2rem;
+  border: solid 0.3em;
+  border-color: #A57D00;
+  border-radius: 2rem;
+  min-width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .artiste .artisteSeul .form {
+  margin: 2rem;
+  border: solid 0.3em;
+  border-color: #A57D00;
+  border-radius: 2rem;
+  min-width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
